@@ -1,5 +1,5 @@
 # Makefile for RASWare 2013
-TARGET = RASTemplate.axf
+TARGET = RASDemo.axf
 
 # Library Locations
 STELLARIS = ../../StellarisWare

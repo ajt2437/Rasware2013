@@ -10,5 +10,5 @@ void initGPIOLineSensor(void) {
 }
 
 void gpioLineSensorDemo(void) {
-     
+   
 }

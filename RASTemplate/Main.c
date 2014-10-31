@@ -1,14 +1,24 @@
-#include <RASLib/inc/common.h>
+#include "RASDemo.h"
 
-// The 'main' function is the entry point of the program
-int main(void) {
+#include <RASLib/inc/common.h>
+#include <RASLib/inc/gpio.h>
+#include <RASLib/inc/time.h>
+
+tBoolean led_on;
+
+void blink(void) {
+    SetPin(PIN_F1, led_on);
+
+    led_on = !led_on;
+}
+
+int main(void) {  
+    
     InitializeMCU();
-    
-    // Initialization code can go here
-    
-    while (1) {
+    CallEvery(blink, 0, 0.25f);
+
+    while(1) {
         
-        // Runtime code can go here
-        
+ 
     }
 }
