@@ -4,7 +4,7 @@
 #include <RASLib/inc/gpio.h>
 #include <RASLib/inc/time.h>
 
-tBoolean led_on;
+tBoolean led_on = true;
 
 void blink(void) {
     SetPin(PIN_F1, led_on);
@@ -18,7 +18,7 @@ int main(void) {
     CallEvery(blink, 0, 0.25f);
 
     while(1) {
-        
+        gpioLineSensorDemo();
  
     }
 }
