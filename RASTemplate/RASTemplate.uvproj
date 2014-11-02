@@ -416,24 +416,24 @@
               <FilePath>.\Startup.c</FilePath>
             </File>
             <File>
-              <FileName>GPIOLineSensorDemo.c</FileName>
+              <FileName>MotorDemo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\RASDemo\GPIOLineSensorDemo.c</FilePath>
+              <FilePath>.\MotorDemo.c</FilePath>
             </File>
             <File>
-              <FileName>IRSensorDemo.c</FileName>
+              <FileName>GPIOLineSensorDemo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\RASDemo\IRSensorDemo.c</FilePath>
+              <FilePath>.\GPIOLineSensorDemo.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2CLineSensorDemo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\I2CLineSensorDemo.c</FilePath>
             </File>
             <File>
               <FileName>RASDemo.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\RASDemo\RASDemo.h</FilePath>
-            </File>
-            <File>
-              <FileName>MotorDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\MotorDemo.c</FilePath>
+              <FilePath>.\RASDemo.h</FilePath>
             </File>
           </Files>
         </Group>
