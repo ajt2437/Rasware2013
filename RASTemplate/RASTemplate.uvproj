@@ -426,14 +426,14 @@
               <FilePath>.\GPIOLineSensorDemo.c</FilePath>
             </File>
             <File>
-              <FileName>I2CLineSensorDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\I2CLineSensorDemo.c</FilePath>
-            </File>
-            <File>
               <FileName>RASDemo.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\RASDemo.h</FilePath>
+            </File>
+            <File>
+              <FileName>IRSensorDemo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\IRSensorDemo.c</FilePath>
             </File>
           </Files>
         </Group>
