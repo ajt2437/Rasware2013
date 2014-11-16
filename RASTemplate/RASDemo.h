@@ -1,7 +1,7 @@
 
 // Functions in MotorDemo
 void initMotors(void); 
-void motorDemo(float leftSpeed, float rightSpeed);
+void motorSet(float leftSpeed, float rightSpeed);
 
 // Functions in ServoDemo
 void initServo(void);
@@ -13,21 +13,9 @@ void i2cLineSensorDemo(void);
 
 // Function in IRDemo
 void initIRSensor(void);
-void IRSensorDemo(void);
+void IRSensorFigure8(void);
+void IRSensorFigure8(void);
 
-// Functions in EncoderDemo
-void initEncoders(void);
-void encoderDemo(void);
-
-// Function for UARTDemo
-void uartDemo(void);
-
-// Functions in SonarDemo
-void initSonar(void);
-void sonarDemo(void);
-
-// Function for GPIODemo
-void gpioDemo(void);
 
 // Functions for GPIOLineSensorDemo
 void initGPIOLineSensor(void);

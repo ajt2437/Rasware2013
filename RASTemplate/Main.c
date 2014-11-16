@@ -15,9 +15,11 @@ void blink(void) {
 int main(void) {  
     InitializeMCU();
     CallEvery(blink, 0, 0.25f);
-		initGPIOLineSensor();
+		//initGPIOLineSensor();
+		initIRSensor();
+		initMotors();
     while(1) {
-        gpioLineSensorDemo();
- 
+        //gpioLineSensorDemo();
+				IRSensorFigure8();
     }
 }

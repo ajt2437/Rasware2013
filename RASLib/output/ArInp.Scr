@@ -1,0 +1,19 @@
+--create .\output\RASLib.lib
+.\output\motor.o
+.\output\servo.o
+.\output\adc.o
+.\output\time.o
+.\output\uart.o
+.\output\encoder.o
+.\output\gpio.o
+.\output\pwm.o
+.\output\sonar.o
+.\output\i2c.o
+.\output\i2clinesensor.o
+.\output\common.o
+.\output\gpiolinesensor.o
+.\output\linesensor.o
+.\output\startup.o
+.\output\servomotor.o
+.\output\tlemotor.o
+C:\StellarisWare\driverlib\rvmdk-cm4f\driverlib-cm4f.lib

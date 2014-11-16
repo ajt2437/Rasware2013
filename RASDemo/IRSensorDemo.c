@@ -15,9 +15,9 @@ void initIRSensor(void) {
     initialized = true;
 
     // initialize 4 pins to be used for ADC input
-    adc[0] = InitializeADC(PIN_D0);
-    adc[1] = InitializeADC(PIN_D1);
-    adc[2] = InitializeADC(PIN_D2);
+    adc[0] = InitializeADC(PIN_E1);
+    adc[1] = InitializeADC(PIN_E2);
+    adc[2] = InitializeADC(PIN_E3);
     adc[3] = InitializeADC(PIN_D3);
 }
 

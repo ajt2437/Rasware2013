@@ -3,34 +3,19 @@
 #include <RASLib/inc/common.h>
 #include <RASLib/inc/motor.h>
 
-static tMotor *leftMotor;
-static tMotor *rightMotor;
-static tBoolean initialized = false;
+tMotor *motors[2];
 
 void initMotors(void) {
-    // don't initialize this if we've already done so
-    if (initialized) {
-        // make sure the motors are off
-        SetMotor(leftMotor, 0);
-        SetMotor(rightMotor, 0);
-        return;
-    }
-    
-    initialized = true;
-
-    leftMotor = InitializeTLEMotor(PIN_B7, PIN_B6, true, false);
-    rightMotor = InitializeTLEMotor(PIN_C5, PIN_C4, true, false);
-    
-    // other pins can also be used for motors on the sacapuntas boosterpack:
-    //leftMotor = InitializeMotor(PIN_F1, PIN_F0, true, false);
-    //rightMotor = InitializeMotor(PIN_F3, PIN_F2, true, false);
-
-    // make sure the motors are off
-    SetMotor(leftMotor, 0);
-    SetMotor(rightMotor, 0);
+    motors[0] = InitializeServoMotor(PIN_B0, false); //left motor
+    motors[1] = InitializeServoMotor(PIN_B1, true); //right motor
+	
+    SetMotor(motors[0], 0);
+    SetMotor(motors[1], 0);
 }
 
 void motorDemo(void) {
+		tMotor *leftMotor = motors[0];
+		tMotor *rightMotor = motors[1];
     float left = 0, right = 0, speed = 0.75f, accel = 0.01f;
     char newline = 13;
     char ch;    
